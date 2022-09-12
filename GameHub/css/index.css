@@ -1,0 +1,211 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    max-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(145, 136, 136);
+
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav {flex:1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+.content-box{
+    display: grid;
+    grid-template-areas: 'c1 c2';
+    gap: 2;
+    background-color: antiquewhite;
+
+}
+.box-c1{
+    grid-area: c1;
+}
+.box-c2{
+    grid-area: c2;
+}
+.card{
+    box-shadow: 10px 15px ghostwhite;
+    width: 250px;
+    height: 200px;
+    border: 2px solid whitesmoke;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.c1{
+    margin-top: 20px;
+    text-justify: inter-word;
+}
+.card button{
+    background-color: aquamarine;
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+    font-size: 20px;
+    width: 150px;
+    overflow: hidden;
+}
+.box-c2 img{
+    width: 100%;
+    height: 400px;
+    padding-top: 10px;
+}
+.maincontent{
+   
+    display: grid;
+    grid-template-areas: 'mc1 mc2 mc3' 'mc4 mc5 mc6';
+
+}
+.maingaming h2{
+    margin-top: 20px;
+    text-align: center;
+}
+.mainc1{
+    grid-area: mc1;
+}
+.mainc2{
+    grid-area: mc2;
+}
+.mainc3{
+    grid-area: mc3;
+}
+.mainc4{
+    grid-area: mc4;
+}
+.mainc5{
+    grid-area: mc5;
+}
+.mainc6{
+    grid-area: mc6;
+}
+.card-game{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    border: 2px solid sandybrown;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 10px 5px gray;
+}
+.card-game img{
+    width: 100%;
+    padding-top: 10px;
+}
+.card-game h3{
+    font-weight:bolder ;
+}
+.card-game button{
+    margin-top: 20px;
+    background-color: aqua;
+    width: 40%;
+    padding: 5px;
+    border-radius: 50px;
+
+
+}
+.expolorbtn{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+.expolorbtn button{
+    background-color: aquamarine;
+    border: 2px solid aquamarine;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.footer{
+    background-color: darkgray;
+    text-align: center;
+}
+.footer h4{
+    padding: 25px;
+}
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background-color: lightgoldenrodyellow;
+        position:absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        display: none;
+    }
+    /* nav ul li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } */
+    /* nav ul li a{
+        color: rgb(220, 215, 215);
+    } */
+    .menu-icon{
+        display: block;
+    }
+}
+    @media only screen and (max-width:1000px){
+        .content-box{
+            display: grid;
+            grid-template-areas: 'c2' 'c1';
+            padding: 25px;
+        }
+    }
+       @media only screen and (max-width:900px) {
+        .maincontent{
+            display: grid;
+            grid-template-areas: 'mc1' 'mc2' 'mc3';
+        background-color: aqua;
+        margin-top: 20px;
+        padding: 15px;
+        }
+        .expolorbtn {
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+        }
+        .footer h4{
+            padding: 10px;
+        }
+        .footer{
+            background-color: burlywood;
+        }
+    }
+   
+    
